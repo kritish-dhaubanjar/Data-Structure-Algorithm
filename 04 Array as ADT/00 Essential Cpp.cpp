@@ -8,6 +8,7 @@ public:
     int *A;
     Sample();
     ~Sample();
+    Sample(Sample &sample);
     void show();
 };
 
@@ -20,6 +21,13 @@ Sample::~Sample()
 {
     cout << "delete[] A;\n";
     delete[] A;
+}
+
+Sample::Sample(Sample &sample)
+{
+    cout << "Sample(Sample &sample)\n";
+    this->flag = sample.flag;
+    this->A = sample.A;
 }
 
 void Sample::show()
@@ -70,6 +78,8 @@ int main()
 
     cout << "\npassByValue(sample)\n";
     passByValue(sample);
+    cout << &sample << "\n";
+    cout << sample.A << "\n";
     sample.show();
 
     cout << "\npassByReference(&sample)\n";
