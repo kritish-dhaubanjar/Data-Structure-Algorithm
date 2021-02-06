@@ -29,3 +29,11 @@
 - Combination.c          
 - TOH.c
 - Taylor Series.c
+
+### 03. Arrays Representations
+
+- Stack Declare Initialize Access.c
+- Stack Declare Initialize Access.cpp
+- Heap Array.c
+- Resize by realloc.cpp
+- 2D Array.cpp
