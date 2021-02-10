@@ -37,3 +37,15 @@
 - Heap Array.c
 - Resize by realloc.cpp
 - 2D Array.cpp
+
+### 04. Arrays as ADT
+
+- Essential Array.c
+- Essential Cpp.cpp
+- Essential Structure.c
+- Array ADT.c
+- Array_ADT.h
+- Array ADT Set Operations.c
+- Array ADT.cpp
+
+
