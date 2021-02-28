@@ -1,13 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-struct Node
-{
-    int data;
-    struct Node *next;
-}; // *head = NULL
+#include "01_LinkedList Basics.h"
+#include <limits.h>
 
 struct Node *head = NULL;
+
+int main()
+{
+    int A[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    create(A, 10);
+
+    display(head);
+
+    recursiveDisplay(head);
+
+    recursivReverseDisplay(head);
+
+    printf("\nRecursive Count: %d\n", recursiveCount(head));
+
+    printf("\nRecursive Sum: %d\n", recursiveSum(head));
+
+    printf("\nMax: %d\n", max(head));
+
+    return 0;
+}
 
 void create(int A[], int size)
 {
@@ -54,17 +71,24 @@ void recursivReverseDisplay(struct Node *p)
     }
 };
 
-int main()
+int recursiveCount(struct Node *p)
 {
-    int A[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
-    create(A, 10);
-
-    display(head);
-
-    recursiveDisplay(head);
-
-    recursivReverseDisplay(head);
-
+    if (p)
+        return 1 + recursiveCount(p->next);
     return 0;
+}
+
+int recursiveSum(struct Node *p)
+{
+    if (p)
+        return p->data + recursiveSum(p->next);
+    return 0;
+}
+
+int max(struct Node *p)
+{
+    if (!p)
+        return INT_MIN;
+    int t = max(p->next);
+    return p->data > t ? p->data : t;
 }
