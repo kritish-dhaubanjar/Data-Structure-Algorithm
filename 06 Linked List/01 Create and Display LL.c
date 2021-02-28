@@ -36,6 +36,24 @@ void display(struct Node *p)
     }
 };
 
+void recursiveDisplay(struct Node *p)
+{
+    if (p)
+    {
+        printf("[%p | %d | %p]\n", p, p->data, p->next);
+        recursiveDisplay(p->next);
+    }
+};
+
+void recursivReverseDisplay(struct Node *p)
+{
+    if (p)
+    {
+        recursivReverseDisplay(p->next);
+        printf("[%p | %d | %p]\n", p, p->data, p->next);
+    }
+};
+
 int main()
 {
     int A[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -43,6 +61,10 @@ int main()
     create(A, 10);
 
     display(head);
+
+    recursiveDisplay(head);
+
+    recursivReverseDisplay(head);
 
     return 0;
 }
