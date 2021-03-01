@@ -48,4 +48,14 @@
 - Array ADT Set Operations.c
 - Array ADT.cpp
 
+### 05. Strings
+
+- Char Array vs String.c
+- Reverse String.c
+- Compare.c
+- Duplicates [Hashtable].c
+- Duplicates [Bitwise].c
+- Anagram.c
+- Permutation.c
+
 
