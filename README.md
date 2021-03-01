@@ -58,4 +58,15 @@
 - Anagram.c
 - Permutation.c
 
+### 06. Singly Linked List
+- 01 Create and Display LL.c
+- 02 Linear Search.c
+- 03 Insert.cpp
+- 04 Insert Last.cpp
+- 05 Insert Sorted.cpp
+- 06 Delete Node.cpp
+- 07 Remove Duplicates.cpp
+- 08 Reverse Links.cpp
+- 09 Merge LinkedList.cpp
+- 10 Cycle Linear.cpp
 
