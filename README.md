@@ -81,3 +81,7 @@
 - 01 Stack [Array].c
 - 01 Stack [Array].cpp
 - 01_Stack.h
+- 02 Stack [LinkedList].c
+- 03 Paranthesis Matching.c
+- 04 Infix to Postfix.c
+- 05 Postfix Evalutaion.c
