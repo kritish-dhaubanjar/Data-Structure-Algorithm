@@ -70,3 +70,14 @@
 - 09 Merge LinkedList.cpp
 - 10 Cycle Linear.cpp
 
+### 07. Doubly Linked List
+- 01 Doubly Linked List.cpp
+- 02 Insert.cpp
+- 03 Delete Node.cpp
+- 04 Reverse.cpp
+- 05 Circular.cpp
+
+### 08. Stack
+- 01 Stack [Array].c
+- 01 Stack [Array].cpp
+- 01_Stack.h
