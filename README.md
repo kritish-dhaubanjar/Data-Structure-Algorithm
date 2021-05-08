@@ -85,3 +85,7 @@
 - 03 Paranthesis Matching.c
 - 04 Infix to Postfix.c
 - 05 Postfix Evalutaion.c
+
+### 09. Queue
+- 01 Queue [Array] using Double Pointer.c
+- 02 Circular Queue.c
