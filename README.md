@@ -90,3 +90,7 @@
 - 01 Queue [Array] using Double Pointer.c
 - 02 Circular Queue.c
 - 03 Queue [LL].c
+
+### 10. Tree
+- 01 Create Tree & Traverse.c
+- 02 Iterative Traversal.c
