@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "01_Queue.h"
 #include "01_Node.h"
+#include "01_Queue.h"
+#include "01_Stack.h"
+#define SIZE 100
 
 Node *root = NULL;
 
@@ -56,31 +58,77 @@ void create()
 
 void PreOrder(Node *node)
 {
-  if (node)
+  Stack stack;
+
+  initStack(&stack, SIZE);
+
+  while (node != NULL || !isStackEmpty(&stack))
   {
-    printf("%d ", node->data);
-    PreOrder(node->left);
-    PreOrder(node->right);
+    if (node != NULL)
+    {
+      printf("%d ", node->data);
+      push(&stack, node);
+      node = node->left;
+    }
+    else
+    {
+      node = pop(&stack);
+      node = node->right;
+    }
   }
 }
 
 void InOrder(Node *node)
 {
-  if (node)
+  Stack stack;
+
+  initStack(&stack, SIZE);
+
+  while (node != NULL || !isStackEmpty(&stack))
   {
-    InOrder(node->left);
-    printf("%d ", node->data);
-    InOrder(node->right);
+    if (node != NULL)
+    {
+      push(&stack, node);
+      node = node->left;
+    }
+    else
+    {
+      node = pop(&stack);
+      printf("%d ", node->data);
+      node = node->right;
+    }
   }
 }
 
 void PostOrder(Node *node)
 {
-  if (node)
+  Stack stack;
+
+  initStack(&stack, SIZE);
+
+  while (node != NULL || !isStackEmpty(&stack))
   {
-    PostOrder(node->left);
-    PostOrder(node->right);
-    printf("%d ", node->data);
+    if (node != NULL)
+    {
+      push(&stack, node);
+      node = node->left;
+    }
+    else
+    {
+      node = pop(&stack);
+
+      if (node->data > 0)
+      {
+        node->data *= -1;
+        push(&stack, node);
+        node = node->right;
+      }
+      else
+      {
+        printf("%d ", node->data * -1);
+        node = NULL;
+      }
+    }
   }
 }
 
