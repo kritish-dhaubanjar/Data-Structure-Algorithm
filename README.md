@@ -101,3 +101,6 @@
 - 01 BST Insert Search.c
 - 02 Delete.c
 - 03 Preorder.c
+
+### 12. AVL
+- 01 AVL.c
