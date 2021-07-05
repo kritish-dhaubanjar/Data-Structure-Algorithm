@@ -96,3 +96,8 @@
 - 02 Iterative Traversal.c
 - 03 Level Traversal.c
 - 04 Height Count Node.c
+
+### 11. BST
+- 01 BST Insert Search.c
+- 02 Delete.c
+- 03 Preorder.c
