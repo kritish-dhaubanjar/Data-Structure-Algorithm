@@ -116,3 +116,4 @@
 - 01 Bubble.c
 - 02 Insertion.c
 - 03 Selection.c
+- 04 Quick.c
