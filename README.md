@@ -118,3 +118,9 @@
 - 03 Selection.c
 - 04 Quick.c
 - 05 Merge 2 Arrays.c
+- 06 Merge 1 Array.c
+- 07 Iterative Merge Sort.c
+- 08 Recursive Merge.c
+- 09 Count Sort.
+- 10 Bucket.c
+- 11 Radix.c
