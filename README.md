@@ -111,3 +111,8 @@
 ### 14. Hashing
 - 01 Chaining.c
 - 02 Linear Probbing.c
+
+### 15. Sorting
+- 01 Bubble.c
+- 02 Insertion.c
+- 03 Selection.c
