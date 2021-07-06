@@ -124,3 +124,4 @@
 - 09 Count Sort.
 - 10 Bucket.c
 - 11 Radix.c
+- 12 Shell.c
