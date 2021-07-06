@@ -107,3 +107,7 @@
 
 ### 13. Heap
 - 01 Heap.c
+
+### 14. Hashing
+- 01 Chaining.c
+- 02 Linear Probbing.c
