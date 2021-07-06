@@ -117,3 +117,4 @@
 - 02 Insertion.c
 - 03 Selection.c
 - 04 Quick.c
+- 05 Merge 2 Arrays.c
